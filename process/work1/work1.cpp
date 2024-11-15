@@ -147,7 +147,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     case WM_CREATE:
     {
         child = FindWindow(NULL, L"child");
-        srand(time(NULL));
+        srand(time(NULL));s
         CreateWindow(L"button", L"지우기", WS_VISIBLE | WS_CHILD, 10, 10, 200, 100, hWnd, (HMENU)3, hInst, NULL);
     }
     break;
